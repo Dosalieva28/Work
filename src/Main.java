@@ -1,19 +1,35 @@
+import person.Dancer;
+import person.Person;
+import person.Programmer;
+import person.Singer;
+
 import javax.imageio.metadata.IIOMetadataFormatImpl;
 
 public class Main {
     public static void main(String[] args) {
-     Game gm = new Game("Candy Crush", "Sobirat almazy", 234 ,  "John lee " );
-        System.out.println(gm.toString());
-        Game.game();
-        Game.like();
 
-        Game gm2 = new Game("Candy Crush", "Sobirat brilianty", 234 , "John lee " );
-        System.out.println(gm2);
-        System.out.println(gm);
-
+        Person per = new Person("Sara","Programmist");
+        System.out.println(per.toString());
+        per.eat();
+        per.learn();
+        per.walk();
+        Programmer pr = new Programmer("Ajara","Programmist", "Skyland");
+        System.out.println(pr.toString());
+        pr.eat();
+        pr.learn();
+        pr.walk();
+        Dancer dan = new Dancer("Sofia", "Dancer", "Blackpink" );
+        System.out.println(dan.toString());
+        dan.eat();
+        dan.learn();
+        dan.walk();
+        Singer sin = new Singer("Dias", "SM", "BTS");
+        System.out.println(sin.toString());
+        sin.eat();
+        sin.learn();
+        sin.walk();
 
     }
-
     }
 
 
